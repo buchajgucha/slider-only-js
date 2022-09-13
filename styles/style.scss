@@ -1,0 +1,56 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.slider__window {
+  overflow: hidden;
+  background-color: pink;
+}
+
+.slider__track {
+  display: flex;
+  background-color: yellow;
+}
+
+.slider__item {
+  height: 100px;
+  font-size: 44px;
+}
+
+.slider__item:nth-child(3n + 1) {
+  background-color: red;
+}
+
+.slider__item:nth-child(3n + 2) {
+  background-color: green;
+}
+
+.slider__item:nth-child(3n + 3) {
+  background-color: blue;
+}
+
+.slider__btn {
+  text-align: center;
+}
+
+.random-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.random-text:hover {
+  font-size: 20px;
+  line-height: 160%;
+  color: blue;
+}
